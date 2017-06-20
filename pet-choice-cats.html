@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+	<title>Cats | Paws and Look</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&address=Cleveland+Ohio&key=AIzaSyDKrHVe5pmqYZDTRvXL_XCH06BTssFChgQ"
+    ></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  </head>		
+
+  <body>
+			
+	<nav class="navbar navbar-default pawsandlook">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	   <div class="container-fluid">
+	   		<div class="row">
+				<div class="dropdown pet-breed">
+	     			  <button class="btn dropdown-toggle filterbybreed" type="button" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+		     			  <span class="glyphicon glyphicon-user"></span>
+		     			  <span class="caret"></span>
+		     		  </button>
+	        		 <ul class="dropdown-menu">
+	           			<div class="form-check">
+						  <div class = "form-check-input">
+						    Sign Out
+						  </div>						  	
+						</div>
+	         		</ul>
+	        	</div>
+	    	</div>
+	    	<div>
+	    		<div class="navbar-header">
+	      			 <a class="navbar-brand" href="index.html"><img class="logo-1" src="assets/images/logo-trans.png" alt="Paws & Look">
+	       			</a>
+	   			</div>
+				<div id="star-fav">
+        			<a href="favorite-pets.html" class="nav navbar-nav navbar-right">
+	  				<span class="glyphicon glyphicon-star-empty starfixed" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>
+		</nav>
+    </div>
+		<div class="row">
+			<div class="col-sm-3"></div>
+				<div class="col-sm-6">
+					<div class = "displayPet">
+
+						<img src="" class="img-thumbnail animation-target" id="catimage" alt="cat image">
+					</div>
+				</div>
+			<div class="col-sm-3"></div>
+		</div>			
+		<div class="row">
+			<div class="col-xs-4"></div>
+				<div class="col-xs-4">
+					<h2 class = "animation-target" id="petName"></h2>
+				</div>
+			<div class="col-xs-4"></div>
+		</div>				
+				<div class="panel-footer">
+	  				 <div class="row">
+						<div class="col-sm-12">	
+					  		<div class="panel panel-default">
+								<div class="buttonHolder">
+									<div class="buttonCross">
+								  		<a id="negative" href="#" class="buttonTag cross"></a>
+								  	</div>
+								  	<div class="buttonInfo">
+                                          <a id="information" href="#" class="buttonTagInfo infoTag"></a>
+                                      </div>
+								  	<div class="buttonHeart">
+								  		<a id="positive" href="#" class="buttonTag heart"></a>
+								  	</div>
+								</div>
+						    </div>
+				 	    </div>
+				 	</div>
+				 </div>
+	
+	<div id="map"></div>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="javascript/apicat.js"></script>
+
+  </body>
+
+</html>
