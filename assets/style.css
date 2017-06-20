@@ -240,8 +240,7 @@ img.placeholder {
 .pet-image-bigger {
   display: block;
   margin: 20px;
-  width: 200px;
-  height: 150px;
+  height: 100px;
 }
 
 #pet-choices {
