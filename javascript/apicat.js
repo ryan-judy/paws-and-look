@@ -44,6 +44,8 @@ $(document).ready(function() {
     var mapURLloc = "";
     var description = "";
     var loop = false;
+    var uid = firebase.auth().uid;
+
     $('#map').hide();
     // $('#view-map').hide();
     // console.log(google);

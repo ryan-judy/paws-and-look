@@ -44,6 +44,8 @@ $(document).ready(function() {
     var mapURLloc = "";
     var description = "";
     var loop = false;
+    var uid = firebase.auth().uid;
+
     $('#map').hide();
     // $('#view-map').hide();
     // console.log(google);
@@ -124,7 +126,7 @@ $(document).ready(function() {
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
-                        console.log("pos" + pos);
+                        //console.log("pos" + pos);
 
             globalLat = pos.lat;
             globalLng = pos.lng;

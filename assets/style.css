@@ -21,6 +21,10 @@ h2 {
   padding-bottom: 10px;
 }
 
+ #map {
+        height: 450px;
+        overflow: auto;
+      }
 
 .main {
  	margin-top: 30px;
