@@ -711,7 +711,7 @@ p{margin-bottom:.3em;}
 .animation-target {
   -webkit-animation: animation 1000ms linear both;
   animation: animation 1000ms linear both;
-  height: auto;
+  height: 150px;
   margin: auto;
   display: block;
 }
