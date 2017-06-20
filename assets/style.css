@@ -553,12 +553,8 @@ p{margin-bottom:.3em;}
 }
 
 
-#catimage {
-  height: 415px;
-}
-
 #dogimage, #catimage {
-  height: 415px;
+  height: 350px;
 }
 
 
