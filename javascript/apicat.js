@@ -18,7 +18,7 @@ $(document).ready(function() {
     var globalLat;
     var globalLng;
     var key = "&key=F411ff9725d287d4138503a0c95030a6"
-    var AnimURL = "http://api.petfinder.com/pet.find?format=json"
+    var AnimURL = "https://api.petfinder.com/pet.find?format=json"
     var animLocLat;
     var animnLocLong;
     var zip = "";
@@ -234,7 +234,7 @@ $(document).ready(function() {
         // console.log("globalLat within reverse geolocator: " + globalLat);
         // console.log("globalLng within reverse geolocator: " + globalLng);
         // reverse geolocation
-            var revGeolocQuery = "http://maps.googleapis.com/maps/api/geocode/json?latlng=" + globalLat + "," + globalLng;
+            var revGeolocQuery = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + globalLat + "," + globalLng;
             revGeolocQuery = revGeolocQuery + "&sensor=true";
           // mapURLzip = mapURLzip.replace(/ /g, "+");
           $.ajax({
@@ -404,7 +404,7 @@ $(document).ready(function() {
             
             //var zipInput = $("#zip").val();
             var userZip = '&location=' + zip;
-            var pfApiUrl = "http://api.petfinder.com/pet.find?format=json&key=f411ff9725d287d4138503a0c95030a6&count=1&output=basic"
+            var pfApiUrl = "https://api.petfinder.com/pet.find?format=json&key=f411ff9725d287d4138503a0c95030a6&count=1&output=basic"
             var queryURL = pfApiUrl + userZip;
             // console.log(queryURL);
             $.ajax({
