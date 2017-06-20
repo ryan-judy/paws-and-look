@@ -155,7 +155,7 @@ $(document).ready(function() {
 
 	      		//emptying out the div and displaying the user's selection
 				$(".main-login").empty();
-				$('html, body').animate({ scrollTop: 150 }, 'fast');
+				$('html, body').animate({ scrollTop: 0 }, 'fast');
 				var imageDisplay = $("<img>");
 				imageDisplay.addClass("image");
 				imageDisplay.addClass("img-thumbnail");
